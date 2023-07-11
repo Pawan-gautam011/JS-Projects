@@ -10,7 +10,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: lightblue;
+    background:black;
 }
 .heading{
     position: relative;
@@ -43,7 +43,13 @@ body{
 .hr{
     width: 160px;
     height: 160px;
-    transform: rotate(0deg);
+    transform: rotateZ(0deg);
+}
+.clock .min,
+.mn{
+    width: 190px;
+    height: 190px;
+    transform: rotateZ(480deg);
 }
 .hr,
 .mn,
@@ -52,7 +58,7 @@ body{
     display: flex;
     justify-content: center;
 }
-.hr::before{
+.hr::before {
     content: "";
     position: absolute;
     width: 6px;
@@ -60,4 +66,13 @@ body{
     background: #494c97;
     border-radius: 6px 6px 0 0;
     z-index: 10;
+}
+.mn::before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 90px;
+    background: yellow;
+    border-radius: 6px 6px 0 0;
+    z-index: 11;
 }
