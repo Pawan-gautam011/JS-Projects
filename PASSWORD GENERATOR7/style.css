@@ -47,7 +47,7 @@ z-index: 1000;
     font-size: 24px;
     cursor: pointer;
 }
-#btn:active{
+#btn:hover{
     background: #fff;
     color: #000;
 }
