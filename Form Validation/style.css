@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.formdesign{
+    font-size: 20px;
+}
+.formdesign input{
+    width: 30%;
+    padding: 12px 20px;
+    border:  1px solid blue;
+    outline: none;
+    margin: 14px;
+    border-radius: 3px;
+}
+
+.formerror{
+    font-size: 10px;
+    color: brown;
+}
+
+.but{
+    padding: 25px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 30px 50px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
