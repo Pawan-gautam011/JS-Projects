@@ -9,7 +9,18 @@ body{
     text-align: center;
     overflow-x: hidden; 
 }
-
+.color{
+    position: relative;
+    background-color: rgba(48, 95, 161, 0.534);
+    height: 60px;
+    width: 350px;
+    left: 500px;
+    border-radius: 20px;
+}
+h1{
+    color: rgb(35, 35, 41);
+    
+}
 .box{
     display: flex;
     justify-content: center;
