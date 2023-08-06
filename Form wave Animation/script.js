@@ -6,3 +6,14 @@ labels.forEach(label => {
         .map((letter, idx) => `<span style="transition-delay:${idx * 100}ms">${letter}</span>`)
         .join('')
 })
+
+
+    
+var a=document.querySelector("button")
+
+a.addEventListener("click",function (){
+    alert("Login Succesfull!")
+})
+
+
+

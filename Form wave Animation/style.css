@@ -37,7 +37,7 @@ h1{
 }
 .container a{
     text-decoration: none;
-    color: lightblue;
+    color: rgb(2, 25, 33);
 }
 .btn{
     cursor: pointer;
@@ -52,7 +52,7 @@ h1{
 .btn:focus{
     outline:0;
 }
-.btn:active{
+.btn:hover{
     transform: scale(0.98);
 }
 .text{
@@ -65,11 +65,11 @@ h1{
 }
 .form-control input {
     background-color: transparent;
-    border: 0;
+     border: 0; 
     border-bottom: 2px #fff solid;
     display: block;
     width: 100%;
-    padding: 15px 0;
+    padding: 25px 0;
     font-size: 18px;
     color: #fff;
   }
