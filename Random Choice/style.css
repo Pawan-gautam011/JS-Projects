@@ -1,63 +1,3 @@
-/* *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background:#244367 ;
-    overflow: hidden;
-    margin: 0;
-}
-h3{
-    color: #fff;
-    margin: 10px 0 20px;
-}
-.container{
-    width: 500px;
-    background: #15227a;
-    border: 25px;
-    padding: 30px;
-    
-}
-textarea{
-    border: none;
-    display: block;
-    width: 100%;
-    height: 100px;
-    padding: 10px;
-    margin: 0 0 20px;
-    font-size: 16px;
-    outline: none;
-}
-#tags{
-    position: absolute;
-}
-.tag{
-    position: absolute;
-    background-color: orangered;
-    color:#fff;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-    margin: 0 5px 10px 0;
-    font-size: 15px;
-    display: inline-block;
-   top: 30px;
-}
-.tag.highlight{
-    background-color: #1530e2;
-} */
-
-
-
-
-
-
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
 * {
@@ -83,9 +23,16 @@ h3 {
 }
 
 .container {
-  width: 400px;
-  background-color: #273c75;
-  padding: 30px;
+    width: 400px;
+    background-color: #273c75;
+    padding: 30px;
+    background: rgba( 237, 237, 237, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 9px );
+    -webkit-backdrop-filter: blur( 9px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    position: relative;
 }
 
 textarea {
@@ -103,7 +50,10 @@ textarea {
 textarea:focus {
   outline: none;
 }
-
+#tags{
+    position: relative;
+    top: 80%;
+}
 .tag {
   background-color: #f0932b;
   color: #fff;
