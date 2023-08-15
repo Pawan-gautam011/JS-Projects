@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(6, 142, 144);
+    
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(40, 192, 192);
+    width: 40%;
+    padding: 50px 40px;
+    border-radius: 5px;
+    color: #fff;
+    background: rgba(56, 183, 145, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 40px 30px rgba(0, 0, 0, 0.308);
+    backdrop-filter: blur(5.8px);
+    -webkit-backdrop-filter: blur(50.8px);
+    border: 1px solid rgba(23, 221, 162, 0.44);
+}
+
+input{
+    outline: none;
+    padding: 10px;
+}
