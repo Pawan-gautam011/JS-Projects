@@ -1,4 +1,4 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -30,7 +30,87 @@ body{
     border: 1px solid rgba(23, 221, 162, 0.44);
 }
 
-input{
+input {
+    width: 50%;
+    padding: 20px 50px;
     outline: none;
-    padding: 10px;
+    margin: 20px ;
+  }
+ */
+ /* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(6, 142, 144);
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 20vh;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(40, 192, 192);
+    width: 40%;
+    padding: 50px 40px;
+    border-radius: 5px;
+    color: #fff;
+    background: rgba(56, 183, 145, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 40px 30px rgba(0, 0, 0, 0.308);
+    backdrop-filter: blur(5.8px);
+    -webkit-backdrop-filter: blur(50.8px);
+    border: 1px solid rgba(23, 221, 162, 0.44);
+  
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: none;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+@media (max-width: 600px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
