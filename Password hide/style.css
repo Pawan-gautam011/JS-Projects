@@ -1,49 +1,8 @@
-/* *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    background: rgb(6, 142, 144);
-    
-}
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    overflow: hidden;
-}
-.content{
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(40, 192, 192);
-    width: 40%;
-    padding: 50px 40px;
-    border-radius: 5px;
-    color: #fff;
-    background: rgba(56, 183, 145, 0.2);
-    border-radius: 16px;
-    box-shadow: 0 40px 30px rgba(0, 0, 0, 0.308);
-    backdrop-filter: blur(5.8px);
-    -webkit-backdrop-filter: blur(50.8px);
-    border: 1px solid rgba(23, 221, 162, 0.44);
-}
-
-input {
-    width: 50%;
-    padding: 20px 50px;
-    outline: none;
-    margin: 20px ;
-  }
- */
- /* Reset some default browser styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: Arial, sans-serif;
     background-color: rgb(6, 142, 144);
@@ -54,13 +13,13 @@ body {
     align-items: center;
     overflow: hidden;
     margin-top: 20vh;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .content {
-    text-align: center;
     display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     background-color: rgb(40, 192, 192);
     width: 40%;
@@ -69,7 +28,7 @@ body {
     color: #fff;
     background: rgba(56, 183, 145, 0.2);
     border-radius: 16px;
-    box-shadow: 0 40px 30px rgba(0, 0, 0, 0.308);
+    box-shadow: 0 40px 90px rgba(0, 0, 0, 0.308);
     backdrop-filter: blur(5.8px);
     -webkit-backdrop-filter: blur(50.8px);
     border: 1px solid rgba(23, 221, 162, 0.44);
@@ -96,7 +55,7 @@ input[type="password"] {
     outline: none;
 }
 
-button {
+button{
     background-color: #007bff;
     color: white;
     border: none;
@@ -108,6 +67,26 @@ button {
 button:hover {
     background-color: #0056b3;
 }
+.content img{
+    height: 20px;
+    display: flex;
+    cursor: pointer;
+}
+.password-container {
+    position: relative;
+    width: 100%;
+}
+.eye-icon {
+    position: absolute;
+    top: 60%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+
+
+
 @media (max-width: 600px) {
     .container {
         max-width: 100%;
