@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="heading" >Movie Management System</h1>
+    <div class="content">
+      <div class="movie">
+        Title:<input
+          type="text"
+          id="title"
+          placeholder="Enter your movie Title.."
+        />
+        Director:<input
+          type="text"
+          id="director"
+          placeholder="Enter director Name.."
+        />
+        Year:<input
+          type="text"
+          id="releasedYear"
+          placeholder="Realeased Year"
+        />
+        Genre:<input
+          type="text"
+          id="genre"
+          placeholder="Enter Producer Name.."
+        />
+
+        <button>Submit</button>
+      </div>
+    </div>
+    <script>
+      //  let p = fetch`http://localhost:3000/movies`;
+      //  p.then((value1) =>{
+      //     return value1.json()
+      //  }).then((value2)=>{
+      //     console.log(value2)
+      //  })
+      let button = document.querySelector("button");
+      button.addEventListener("click", (e) => {
+        e.preventDefault();
+        var name = document.getElementById("title").value;
+        var author = document.getElementById("director").value;
+        var releasedYear = document.getElementById("releasedYear").value;
+        var genre = document.getElementById("genre").value;
+        var movieData = {
+          name: name,
+          author: author,
+          releasedYear: releasedYear,
+          genre: genre,
+        };
+        fetch("http://localhost:3000/movies", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(movieData),
+        })
+          .then(function (res) {
+            if (res.ok) {
+              console.log("Data Submitted");
+              document.getElementById("movieForm").reset();
+            } else {
+              console.log("Something went wrong.");
+            }
+          })
+          .catch(function (error) {
+            console.log("Error:", error);
+          });
+      });
+    </script>
+  </body>
+</html>
