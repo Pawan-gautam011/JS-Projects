@@ -40,7 +40,9 @@ body{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    opacity: 0.6;
-
+    transform: translate(-50%,-50%) scale(0);
+    transition: transform ease 0.5s;
+    opacity: 0.8;
+    color: #f90202;
 }
+
