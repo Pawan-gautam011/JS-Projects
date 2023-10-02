@@ -18,15 +18,74 @@ body{
 }
 
 
-.container{
-    height: 450px;
+#card{
+    height: 500px;
     width: 300px;
     background-color: #fff;
     border-radius: 20px;
-    background: rgba(255, 255, 255, 0.2);
+   position: relative;
     border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid black;
+    overflow: hidden;
 }
+
+#storys{
+    height: 120px;
+    width: 100%;
+    border-bottom: 1px solid #dadada;
+    padding:  15px;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    
+}
+#storys::-webkit-scrollbar{
+    display: none ;
+}
+.story{
+  border: 1px solid red;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    margin: 5px;
+   
+}
+
+.story img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
+#full-screen{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: none;
+    object-fit: cover;
+    object-position: center;
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
