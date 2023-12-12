@@ -7,33 +7,60 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="first">
+      Name:<input type="text" placeholder="Enter name..."/>
+      Roll No:<input type="text" placeholder="Enter Roll No..."/>
+      Class:<input type="text" placeholder="Enter Class..."/>
+    </div>
     <div class="container">
-      <form action="">
+      
+      <div>
         <div class="book1">
           <label>Computer</label>
-          <input type="number" name="" placeholder="Marks" />
+          <input id="bookone" type="number" name="" placeholder="Marks" />
         </div>
         <div class="book2">
           <label>English</label>
-          <input type="number" name="" placeholder="Marks" />
+          <input id="booktwo" type="number" name="" placeholder="Marks" />
         </div>
         <div class="book3">
           <label>Math</label>
-          <input type="number" name="" placeholder="Marks" />
+          <input id="bookthree" type="number" name="" placeholder="Marks" />
         </div>
         <div class="book4">
           <label>Nepali</label>
-          <input type="number" name="" placeholder="Marks" />
+          <input id="bookfour" type="number" name="" placeholder="Marks" />
         </div>
         <div class="book5">
           <label>Science</label>
-          <input type="number" name="" placeholder="Marks" />
+          <input id="bookfive" type="number" name="" placeholder="Marks" />
         </div>
-        <div class="book6">
-          <label>Social Studies</label>
-          <input type="number" name="" placeholder="Marks" />
-        </div>
-      </form>
+      </div>
+      <button onclick="calculate()">Calculate</button>
+      <div>
+        <table>
+          <tr>
+            <td>Total Marks:</td>
+            <td>500</td>
+          </tr>
+          <tr>
+            <td>Obtained Marks:</td>
+            <td id="obtain"></td>
+          </tr>
+          <tr>
+            <td>Percentage:</td>
+            <td id="per">%</td>
+          </tr>
+          <tr>
+            <td>Grade:</td>
+            <td id="grade"></td>
+          </tr>
+          <tr>
+            <td>Remarks</td>
+            <td id="remarks"></td>
+          </tr>
+        </table>
+      </div>
     </div>
 
     <script src="script.js"></script>
