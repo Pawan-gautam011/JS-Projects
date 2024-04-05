@@ -10,7 +10,7 @@ addFriend.addEventListener("click", function () {
         addFriend.innerHTML = "Remove Friend"; 
         check = 1;
     } else {
-        istatus.innerHTML = "Pretty Stranger";
+        istatus.innerHTML = "Stranger";
         istatus.style.color = "red"; 
         addFriend.innerHTML = "Add Friend"; 
         check = 0;

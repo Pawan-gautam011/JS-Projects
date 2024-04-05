@@ -18,11 +18,6 @@ function checkBoxes(){
 
 
 
-
-
-
-
-
     })
 
 }

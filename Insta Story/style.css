@@ -70,8 +70,8 @@ body{
     width: 100%;
     position: absolute;
     display: none;
-    object-fit: cover;
-    object-position: center;
+   background-size: cover;
+   background-position: center;
     
     
 }

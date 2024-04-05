@@ -13,8 +13,6 @@ function uploadImage(){
     imageView.style.border=0;
 
 }
-
-
 dropArea.addEventListener("dragover",function(e){
     e.preventDefault();
 });
